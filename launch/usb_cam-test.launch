@@ -9,7 +9,7 @@
     <param name="io_method" value="mmap"/>
   </node>
   <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
-    <remap from="image" to="/usb_cam/image_raw"/>
+    <remap from="image" to="/image"/>
     <param name="autosize" value="true" />
   </node>
 </launch>

@@ -117,7 +117,7 @@ public:
     // load the camera info
     node_.param("camera_frame_id", img_.header.frame_id, std::string("head_camera"));
     node_.param("camera_name", camera_name_, std::string("head_camera"));
-    node_.param("camera_info_url", camera_info_url_, std::string(""));
+    node_.param("camera_info_url", camera_info_url_, std::string("package://usb_cam/camera_info/head_camera.yaml"));
     cinfo_.reset(new camera_info_manager::CameraInfoManager(node_, camera_name_, camera_info_url_));
 
     // create Services
